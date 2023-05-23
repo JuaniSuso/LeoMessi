@@ -12,8 +12,32 @@ body {
 
 /* NAV BAR*/
 
+footer{
+  background-color: white;
+  padding: 40px;
+}
+
+.logos-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  
+}
+
+.logos-container :hover{
+  background-color: rgb(224, 223, 223);
+  
+  transition: .4s;
+}
+
+footer img{
+  height: 70px;
+  width: auto;
+}
+
 .navbar-brand {
-  font-size: 30px;
+  height: 70px;
+  width: 70px;
 }
 
 .nav-item:hover,
@@ -50,11 +74,7 @@ main {
   font-size: 120px;
 }
 
-.index-content p {
-  display: flex;
-  justify-content: flex-start;
-  color: white;
-}
+
 
 .indexcontainer {
   display: flex;
@@ -90,6 +110,7 @@ main {
 }
 
 /* GALERÍA*/
+
 
 .galery-content h1 {
   display: flex;
@@ -190,6 +211,14 @@ main {
   opacity: 0;
   transition: 0.3s;
 }
+
+.cards{
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  padding: 40px;
+}
+
 
 /* CONTACTO*/
 
@@ -315,7 +344,7 @@ label {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding: 100px;
+  padding: 40px 10px;
   margin-left: 70px;
   margin-right: 70px;
   font-size: 24px;
@@ -332,7 +361,7 @@ label {
   display: flex;
   flex-direction: column;
   gap: 200px;
-  padding: 50px;
+ 
 }
 
 .awardsH2 {
@@ -340,7 +369,7 @@ label {
   font-size: 90px;
   display: flex;
   justify-content: center;
-  padding: 100px;
+  padding: 50px;
   gap: 50px;
   text-decoration: underline;
 }
@@ -355,6 +384,7 @@ label {
 
 .awardsH3 {
   color: white;
+  background-color: #333333;
   font-size: 60px;
   display: flex;
   justify-content: center;
@@ -381,3 +411,282 @@ label {
 .Barcelona li {
   margin-left: 150px;
 }
+
+
+/*MEDIA QUERIES*/
+
+
+
+/* INDEX*/
+
+
+@media (max-width:1024px) {
+
+  .cards{
+    flex-direction: column;
+    
+  }
+  .contact-content h1 {
+    
+  
+    font-size: 100px;
+   
+  }
+
+  .contact-content p{
+    font-size: 20px;
+  }
+
+
+  .galery-content h1 {
+    font-size: 100px;
+    
+  }
+
+  .index-content h1 {
+    padding: 60px;
+    color: white;
+    font-size: 100px;
+  }
+
+  .indexcontainer {
+    flex-direction: column;
+  
+  }
+
+  .indexcontainer img {
+    margin: 0;
+    width: 90%;
+    
+  }
+
+  .indexcontainer p {
+    font-size: 20px;
+    margin: 0;
+  }
+
+  .carousel {
+    padding: 40px;
+    margin: 0;
+   
+  }
+
+}
+
+
+
+@media (max-width:768px) {
+
+  .contact-content h1 {
+    
+    padding: 40px;
+    font-size: 50px;
+   
+  }
+
+  .cards{
+    flex-direction: column;
+    
+  }
+
+  .card-text{
+
+    
+    color: transparent;
+  }
+
+ 
+  .card-title{
+    font-size: 20px;
+  }
+
+  .contact input , textarea{
+    font-size: 15px;
+  }
+
+
+  .galery-content h1 {
+    font-size: 50px;
+    
+  }
+
+  .index-content h1 {
+    padding: 40px;
+    font-size: 50px;
+  }
+
+  .indexcontainer {
+    flex-direction: column;
+  
+  }
+
+  .indexcontainer img {
+    width: 90%;
+    
+  }
+
+  .indexcontainer p {
+    font-size: 15px;
+    margin: 0;
+  }
+
+  .contact-content p{
+    font-size: 15px;
+  }
+
+  .carousel {
+    padding: 40px;
+    margin: 0;
+   
+    
+  }
+
+  footer img{
+    height: 50px;
+    width: auto;
+  }
+
+
+
+  
+
+
+
+}
+
+
+@media (max-width:400px) {
+
+  footer img{
+    height: 30px;
+    width: auto;
+  }
+
+
+  .contact input , textarea{
+    font-size: 10px;
+  }
+
+  .cards{
+    flex-direction: column;
+    
+  }
+
+  .card-text{
+    font-size: 8px;
+    object-fit: cover;
+  }
+
+ 
+  .card-title{
+    font-size: 10px;
+  }
+  .contact-content h1 {
+    
+    padding: 30px;
+    font-size: 40px;
+   
+  }
+
+
+  .galery-content h1 {
+    font-size: 40px;
+    
+  }
+
+  .index-content h1 {
+    padding: 30px;
+    color: white;
+    font-size: 40px;
+  }
+
+  .indexcontainer {
+    flex-direction: column;
+  
+  }
+
+  .indexcontainer img {
+    width: 90%;
+    
+  }
+
+  .indexcontainer p {
+    font-size: 13px;
+    margin: 0;
+  }
+
+  .contact-content p{
+    font-size: 13px;
+  }
+
+
+
+  
+
+
+
+}
+
+
+@media (max-width:250px) {
+
+  .cards{
+    flex-direction: column;
+    
+  }
+
+  .card-text{
+    font-size: 8px;
+    object-fit: cover;
+    color: transparent;
+  }
+
+ 
+  .card-title{
+    font-size: 10px;
+  }
+
+  .contact-content h1 {
+    
+  
+    font-size: 25px;
+   
+  }
+
+
+  .galery-content h1 {
+    font-size: 25px;
+    
+  }
+
+  .index-content h1 {
+   
+    font-size: 25px;
+  }
+
+  footer img{
+    height: 20px;
+    width: auto;
+  }
+
+
+
+
+
+  
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

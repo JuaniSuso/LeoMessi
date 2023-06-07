@@ -1,0 +1,392 @@
+@media (max-width: 1024px) {
+  /*TRAYECTORIA*/
+
+  .trayect h1 {
+    font-size: 100px;
+  }
+
+  /*RECONOCIMIENTOS*/
+
+  .recon h1 {
+    font-size: 70px;
+  }
+
+  /*CONTACTO*/
+
+  .contact-content h1 {
+    font-size: 100px;
+  }
+
+  .contact-content p {
+    font-size: 20px;
+  }
+
+  /*GALERIA*/
+
+  .cards {
+    flex-direction: column;
+  }
+
+  .galery-content h1 {
+    font-size: 100px;
+  }
+
+  /*INDEX*/
+
+  .index-content h1 {
+    padding: 60px;
+    color: white;
+    font-size: 100px;
+  }
+
+  .indexcontainer {
+    flex-direction: column;
+  }
+
+  .indexcontainer img {
+    margin: 0;
+    width: 90%;
+  }
+
+  .indexcontainer p {
+    font-size: 20px;
+    margin: 0;
+  }
+
+  /*CAROUSEL*/
+
+  .carousel {
+    padding: 40px;
+    margin: 0;
+  }
+}
+
+@media (max-width: 768px) {
+
+  /*RECONOCIMIENTOS*/
+    
+  .titles-list li {
+    font-size: 20px;
+  }
+
+  .awardsH2 {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+    gap: 50px;
+  }
+
+  .awardsH3 {
+    font-size: 40px;
+    padding: 100px;
+    gap: 50px;
+  }
+
+  .awardsP,
+  .awardsP1 {
+    font-size: 15px;
+  }
+
+  .recon h1 {
+    font-size: 40px;
+  }
+
+  .recon-index {
+    padding: 40px 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .recon-index a {
+    font-size: 20px;
+  }
+
+  /*TRAYECTORIA*/
+
+  .barcaH2,
+  .parisH2,
+  .argH2 {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+    gap: 50px;
+  }
+
+  .trayectP {
+    font-size: 15px;
+  }
+
+  .indice {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .indice a {
+    font-size: 20px;
+  }
+
+  .trayect h1 {
+    font-size: 50px;
+  }
+
+  /*CONTACTO*/
+
+  
+
+  .contact-content h1 {
+    padding: 40px;
+    font-size: 50px;
+  }
+
+  .contact input,
+  textarea {
+    font-size: 15px;
+  }
+
+  .contact-content p {
+    font-size: 15px;
+  }
+
+
+  /*GALERIA*/
+
+  
+
+  .cards {
+    flex-direction: column;
+  }
+
+  .card-text {
+    color: transparent;
+  }
+
+  .card-title {
+    font-size: 20px;
+  }
+
+ 
+
+  .galery-content h1 {
+    font-size: 50px;
+  }
+
+  /*INDEX*/
+
+  .index-content h1 {
+    padding: 40px;
+    font-size: 50px;
+  }
+
+  .indexcontainer {
+    flex-direction: column;
+  }
+
+  .indexcontainer img {
+    width: 90%;
+  }
+
+  .indexcontainer p {
+    font-size: 15px;
+    margin: 0;
+  }
+
+  
+
+  /*GENERALES*/
+
+  .carousel {
+    padding: 40px;
+    margin: 0;
+  }
+
+  footer img {
+    height: 50px;
+    width: auto;
+  }
+}
+
+@media (max-width: 400px) {
+
+  
+  /*RECONOCIMIENTOS*/  
+
+  .recon h1 {
+    font-size: 30px;
+  }
+
+  .titles-list li {
+    font-size: 20px;
+  }
+
+  .awardsP,
+  .awardsP1 {
+    font-size: 15px;
+  }
+
+  .awardsH2 {
+    font-size: 30px;
+  }
+
+  .awardsH3 {
+    font-size: 25px;
+  }
+
+  /*GALERIA*/
+
+  
+
+  .cards {
+    flex-direction: column;
+  }
+
+  .card-text {
+    font-size: 8px;
+    object-fit: cover;
+  }
+
+  .card-title {
+    font-size: 10px;
+  }
+  .galery-content h1 {
+    font-size: 40px;
+  }
+
+  .grilla {
+    grid-template-areas:
+      "area1 area1 area1"
+      "area2 area2 area2"
+      "area3 area3 area3"
+      "area4 area4 area4"
+      "area5 area5 area5"
+      "area6 area6 area6"
+      "area7 area7 area7"
+      "area8 area8 area8"
+      "area9 area9 area9"
+      "area10 area10 area10";
+  }
+
+
+  /*CONTACTO*/
+
+ 
+
+  .contact-content p {
+    font-size: 13px;
+  }
+
+  .contact input,
+  textarea {
+    font-size: 10px;
+  }
+
+  
+  .contact-content h1 {
+    padding: 30px;
+    font-size: 40px;
+  }
+
+  /*TRAYECTORIA*/
+
+  .trayect h1 {
+    font-size: 40px;
+  }
+
+  .indice a {
+    font-size: 15px;
+  }
+
+  /*INDEX*/
+
+  
+
+  .index-content h1 {
+    padding: 30px;
+    color: white;
+    font-size: 40px;
+  }
+
+  .indexcontainer {
+    flex-direction: column;
+  }
+
+  .indexcontainer img {
+    width: 90%;
+  }
+
+  .indexcontainer p {
+    font-size: 13px;
+    margin: 0;
+  }
+
+  /*GENERALES*/
+
+  footer img {
+    height: 30px;
+    width: auto;
+  }
+
+  
+
+  
+}
+
+@media (max-width: 250px) {
+
+    /*GALERIA*/
+
+  .cards {
+    flex-direction: column;
+  }
+
+  .card-text {
+    font-size: 8px;
+    object-fit: cover;
+    color: transparent;
+  }
+
+  .card-title {
+    font-size: 10px;
+  }
+
+  .galery-content h1 {
+    font-size: 25px;
+  }
+
+  /*CONTACTO*/
+
+  .contact-content h1 {
+    font-size: 25px;
+  }
+
+  /*TRAYECTORIA*/
+
+  .trayect h1 {
+    font-size: 25px;
+  }
+
+  .trayectP {
+    font-size: 12px;
+  }
+
+ /*INDEX*/
+
+  .index-content h1 {
+    font-size: 25px;
+  }
+
+  /*GENERALES*/
+
+  footer img {
+    height: 20px;
+    width: auto;
+  }
+
+  
+}

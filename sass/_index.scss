@@ -1,0 +1,41 @@
+/* INDEX */
+  
+  
+  
+.index {
+    background-color: #272727;
+  }
+  
+  .index-content h1 {
+    display: flex;
+    justify-content: center;
+    padding: 60px;
+    color: white;
+    font-family: goldman;
+    font-size: 120px;
+  }
+  
+  .indexcontainer {
+    display: flex;
+    align-items: center;
+    padding-bottom: 100px;
+    border-bottom: 3px solid #3987fc;
+    text-align: justify;
+  }
+  
+  .indexcontainer img {
+    margin-right: 20px;
+    width: 50%;
+    border-radius: 20px;
+    box-shadow: 10px 10px 7px 1px #181818;
+    border: 1px solid #3987fc;
+  }
+  
+  .indexcontainer p {
+    margin-right: 30px;
+    color: white;
+    font-size: 30px;
+    padding: 30px;
+    align-self: flex-start;
+  }
+  

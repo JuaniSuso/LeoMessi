@@ -1,9 +1,7 @@
 /* GALERÍA*/
 
-
-
-.galery-content{
-  h1{
+.galery-content {
+  h1 {
     display: flex;
     justify-content: center;
     padding: 60px;
@@ -12,7 +10,6 @@
     font-size: 120px;
     background-color: $bg-color;
   }
- 
 }
 
 .grilla {

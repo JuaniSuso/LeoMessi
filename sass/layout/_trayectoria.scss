@@ -1,18 +1,14 @@
-
-
-
-
 /* TRAYECTORIA*/
 
-.trayect{
-  h1{
+.trayect {
+  h1 {
     display: flex;
-  justify-content: center;
-  padding: 60px;
-  color: $main-color;
-  font-family: goldman;
-  font-size: 120px;
-  background-color: $bg-color;
+    justify-content: center;
+    padding: 60px;
+    color: $main-color;
+    font-family: goldman;
+    font-size: 120px;
+    background-color: $bg-color;
   }
 }
 
@@ -24,11 +20,11 @@
     background-color: $main-color;
     display: flex;
     justify-content: center;
-    padding: 70px; 
+    padding: 70px;
     color: $text-color;
     margin-left: 50px;
     margin-right: 50px;
-     & a {
+    & a {
       color: $text-color;
       text-decoration: none;
       font-size: 24px;
@@ -44,28 +40,17 @@
     padding: 100px;
     gap: 50px;
   }
-  
+
   .parisH2,
   .argH2 {
     @extend .barcaH2;
   }
 
-  .trayectP {    
-    color:$text-color;
+  .trayectP {
+    color: $text-color;
     font-size: 30px;
     justify-content: center;
     padding: 50px;
     text-align: justify;
   }
-  
-  
-  
-  
 }
-
-
-
-
-
-
-

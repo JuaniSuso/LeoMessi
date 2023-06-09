@@ -1,15 +1,21 @@
 /* RECONOCIMIENTOS */
-  
-.recon h1 {
+
+.recon {
+  h1 {
     display: flex;
     justify-content: center;
     padding: 60px;
-    color: white;
-    font-size: 100px;
-    background-color: #272727;
+    color: $main-color;
     font-family: goldman;
+    font-size: 120px;
+    background-color: $bg-color;
   }
-  
+}
+
+.reconocimientos {
+  display: flex;
+  flex-direction: column;
+  gap: 200px;
   .recon-index {
     display: flex;
     flex-direction: row;
@@ -18,23 +24,15 @@
     margin-left: 70px;
     margin-right: 70px;
     font-size: 24px;
-    background-color: #3987fc;
-    color: white;
+    background-color: $main-color;
+    color: $text-color;
+    & a {
+      color: $text-color;
+      text-decoration: none;
+    }
   }
-  
-  .recon-index a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  .reconocimientos {
-    display: flex;
-    flex-direction: column;
-    gap: 200px;
-  }
-  
   .awardsH2 {
-    color: #3987fc;
+    color: $main-color;
     font-size: 90px;
     display: flex;
     justify-content: center;
@@ -42,17 +40,13 @@
     gap: 50px;
     text-decoration: underline;
   }
-  
+
   .awardsP1 {
-    color: white;
-    font-size: 40px;
-    justify-content: center;
-    padding: 50px;
-    text-align: justify;
+    @extend .awardsP;
   }
-  
+
   .awardsH3 {
-    color: white;
+    color: $text-color;
     background-color: #333333;
     font-size: 60px;
     display: flex;
@@ -60,23 +54,20 @@
     padding: 100px;
     gap: 50px;
   }
-  
+
   .awardsP {
-    color: white;
+    color: $text-color;
     font-size: 30px;
     justify-content: center;
     padding: 50px;
     text-align: justify;
   }
-  
+
   .titles-list {
-    color: white;
+    color: $text-color;
     font-size: 34px;
     padding: 50px;
     text-align: justify;
     text-decoration: none;
   }
-  
-  .Barcelona li {
-    margin-left: 150px;
-  }
+}

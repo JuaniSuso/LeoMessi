@@ -1,4 +1,6 @@
 @charset "UTF-8";
+/*MIXIN*/
+/*NESTING*/
 /* RESET */
 * {
   margin: 0;
@@ -19,26 +21,30 @@ footer {
   background-color: white;
   padding: 40px;
 }
+footer img {
+  width: auto;
+  height: 70px;
+}
 
 .logos-container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
-
 .logos-container :hover {
   background-color: rgb(224, 223, 223);
   transition: 0.4s;
 }
 
-footer img {
-  height: 70px;
-  width: auto;
-}
-
 .navbar-brand {
-  height: 70px;
   width: 70px;
+  height: 70px;
+}
+.navbar-brand .navba-toggler {
+  list-style: none;
+  border: 3px solid transparent;
+  padding: 10px;
+  transition: 0.4s;
 }
 
 .nav-item:hover,
@@ -64,42 +70,39 @@ footer img {
   padding-top: 80px;
   padding-bottom: 80px;
 }
-
-.carousel-item {
+.carousel .carousel-item {
   border: 2px solid #3987fc;
 }
 
+/*LAYOUTS*/
 /* INDEX */
 .index {
   background-color: #272727;
 }
-
-.index-content h1 {
+.index .index-content h1 {
   display: flex;
   justify-content: center;
   padding: 60px;
-  color: white;
+  color: #3987fc;
   font-family: goldman;
   font-size: 120px;
+  background-color: #272727;
 }
-
-.indexcontainer {
+.index .indexcontainer {
   display: flex;
   align-items: center;
   padding-bottom: 100px;
   border-bottom: 3px solid #3987fc;
   text-align: justify;
 }
-
-.indexcontainer img {
+.index .indexcontainer img {
   margin-right: 20px;
   width: 50%;
   border-radius: 20px;
   box-shadow: 10px 10px 7px 1px #181818;
   border: 1px solid #3987fc;
 }
-
-.indexcontainer p {
+.index .indexcontainer p {
   margin-right: 30px;
   color: white;
   font-size: 30px;
@@ -112,7 +115,7 @@ footer img {
   display: flex;
   justify-content: center;
   padding: 60px;
-  color: white;
+  color: #3987fc;
   font-family: goldman;
   font-size: 120px;
   background-color: #272727;
@@ -127,9 +130,7 @@ footer img {
   padding: 30px;
   grid-template-areas: "area5 area5 area2" "area5 area5 area2" "area1 area4 area4" "area1 area4 area4" "area6 area6 area3" "area6 area6 area3" "area10 area7 area7" "area10 area7 area7" "area9 area9 area8" "area9 area9 area8";
 }
-
-.caja {
-  transition: 0.4s;
+.grilla .caja {
   width: 100%;
   height: 100%;
   background-color: #3987fc;
@@ -138,65 +139,48 @@ footer img {
   align-items: center;
   border-radius: 20px;
   box-shadow: 10px 10px 7px 2px #181818;
-  border: 1px solid #ffffff;
+  border: 1px solid white;
 }
-
-.caja :hover {
-  box-shadow: 10px 10px 7px 4px #181818;
-  border: 3px solid #3987fc;
-  transition: 0.2s;
-}
-
-.caja img {
+.grilla .caja img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 20px;
 }
-
-.c1 {
+.grilla .c1 {
   grid-area: area4;
 }
-
-.c2 {
+.grilla .c2 {
   grid-area: area6;
 }
-
-.c3 {
+.grilla .c3 {
   grid-area: area1;
 }
-
-.c4 {
+.grilla .c4 {
   grid-area: area2;
 }
-
-.c5 {
+.grilla .c5 {
   grid-area: area5;
 }
-
-.c6 {
+.grilla .c6 {
   grid-area: area3;
 }
-
-.c7 {
+.grilla .c7 {
   grid-area: area7;
 }
-
-.c8 {
+.grilla .c8 {
   grid-area: area8;
 }
-
-.c9 {
+.grilla .c9 {
   grid-area: area9;
 }
-
-.c10 {
+.grilla .c10 {
   grid-area: area10;
 }
-
-.card :hover {
-  opacity: 0;
-  transition: 0.3s;
+.grilla .caja :hover {
+  box-shadow: 10px 10px 7px 4px #181818;
+  border: 3px solid #3987fc;
+  transition: 0.2s;
 }
 
 .cards {
@@ -206,27 +190,27 @@ footer img {
   padding: 40px;
 }
 
+.card :hover {
+  opacity: 0;
+  transition: 0.3s;
+}
+
 /* CONTACTO*/
 .contact-content h1 {
   display: flex;
   justify-content: center;
   padding: 60px;
-  color: white;
+  color: #3987fc;
+  font-family: goldman;
   font-size: 120px;
   background-color: #272727;
-  font-family: goldman;
 }
-
 .contact-content p {
   display: flex;
   color: white;
   justify-content: center;
   font-size: 30px;
   padding: 30px;
-}
-
-label {
-  color: white;
 }
 
 .contact {
@@ -237,11 +221,13 @@ label {
   grid-template-rows: repeat(auto, 500px);
   padding: 15px;
 }
-
 .contact :hover {
   box-shadow: 10px 10px 7px 4px #181818;
   border: 1px solid #3987fc;
   transition: 0.6s;
+}
+.contact label {
+  color: white;
 }
 
 /* TRAYECTORIA*/
@@ -249,10 +235,10 @@ label {
   display: flex;
   justify-content: center;
   padding: 60px;
-  color: white;
+  color: #3987fc;
+  font-family: goldman;
   font-size: 120px;
   background-color: #272727;
-  font-family: goldman;
 }
 
 .trayectoria {
@@ -260,8 +246,7 @@ label {
   flex-direction: column;
   gap: 200px;
 }
-
-.indice {
+.trayectoria .indice {
   background-color: #3987fc;
   display: flex;
   justify-content: center;
@@ -270,17 +255,14 @@ label {
   margin-left: 50px;
   margin-right: 50px;
 }
-
-.indice a {
+.trayectoria .indice a {
   color: white;
   text-decoration: none;
   font-size: 24px;
   text-decoration: none;
 }
-
-.barcaH2,
-.parisH2,
-.argH2 {
+.trayectoria .barcaH2, .trayectoria .parisH2,
+.trayectoria .argH2 {
   color: white;
   background-color: #333333;
   font-size: 60px;
@@ -289,8 +271,7 @@ label {
   padding: 100px;
   gap: 50px;
 }
-
-.trayectP {
+.trayectoria .trayectP {
   color: white;
   font-size: 30px;
   justify-content: center;
@@ -303,13 +284,18 @@ label {
   display: flex;
   justify-content: center;
   padding: 60px;
-  color: white;
-  font-size: 100px;
-  background-color: #272727;
+  color: #3987fc;
   font-family: goldman;
+  font-size: 120px;
+  background-color: #272727;
 }
 
-.recon-index {
+.reconocimientos {
+  display: flex;
+  flex-direction: column;
+  gap: 200px;
+}
+.reconocimientos .recon-index {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -320,19 +306,11 @@ label {
   background-color: #3987fc;
   color: white;
 }
-
-.recon-index a {
+.reconocimientos .recon-index a {
   color: white;
   text-decoration: none;
 }
-
-.reconocimientos {
-  display: flex;
-  flex-direction: column;
-  gap: 200px;
-}
-
-.awardsH2 {
+.reconocimientos .awardsH2 {
   color: #3987fc;
   font-size: 90px;
   display: flex;
@@ -341,16 +319,7 @@ label {
   gap: 50px;
   text-decoration: underline;
 }
-
-.awardsP1 {
-  color: white;
-  font-size: 40px;
-  justify-content: center;
-  padding: 50px;
-  text-align: justify;
-}
-
-.awardsH3 {
+.reconocimientos .awardsH3 {
   color: white;
   background-color: #333333;
   font-size: 60px;
@@ -359,25 +328,19 @@ label {
   padding: 100px;
   gap: 50px;
 }
-
-.awardsP {
+.reconocimientos .awardsP, .reconocimientos .awardsP1 {
   color: white;
   font-size: 30px;
   justify-content: center;
   padding: 50px;
   text-align: justify;
 }
-
-.titles-list {
+.reconocimientos .titles-list {
   color: white;
   font-size: 34px;
   padding: 50px;
   text-align: justify;
   text-decoration: none;
-}
-
-.Barcelona li {
-  margin-left: 150px;
 }
 
 @media (max-width: 1024px) {
@@ -386,7 +349,7 @@ label {
     font-size: 100px;
   }
   /*RECONOCIMIENTOS*/
-  .recon h1 {
+  .recon hi {
     font-size: 70px;
   }
   /*CONTACTO*/
@@ -406,19 +369,18 @@ label {
   /*INDEX*/
   .index-content h1 {
     padding: 60px;
-    color: white;
     font-size: 100px;
   }
   .indexcontainer {
     flex-direction: column;
   }
-  .indexcontainer img {
-    margin: 0;
-    width: 90%;
-  }
   .indexcontainer p {
     font-size: 20px;
     margin: 0;
+  }
+  .indexcontainer img {
+    margin: 0;
+    width: 90%;
   }
   /*CAROUSEL*/
   .carousel {
@@ -428,50 +390,38 @@ label {
 }
 @media (max-width: 768px) {
   /*RECONOCIMIENTOS*/
-  .titles-list li {
-    font-size: 20px;
-  }
-  .awardsH2 {
-    font-size: 40px;
-    display: flex;
-    justify-content: center;
-    padding: 100px;
-    gap: 50px;
-  }
-  .awardsH3 {
-    font-size: 40px;
-    padding: 100px;
-    gap: 50px;
-  }
-  .awardsP,
-  .awardsP1 {
-    font-size: 15px;
-  }
   .recon h1 {
     font-size: 40px;
   }
-  .recon-index {
+  .reconocimientos .recon-index {
     padding: 40px 10px;
     margin-left: 20px;
     margin-right: 20px;
   }
-  .recon-index a {
+  .reconocimientos .recon-index a {
     font-size: 20px;
   }
-  /*TRAYECTORIA*/
-  .barcaH2,
-  .parisH2,
-  .argH2 {
+  .reconocimientos .titles-list li {
+    font-size: 20px;
+  }
+  .reconocimientos .awardsH2 {
     font-size: 40px;
     display: flex;
     justify-content: center;
     padding: 100px;
     gap: 50px;
   }
-  .trayectP {
+  .reconocimientos .awardsH3 {
+    font-size: 40px;
+    padding: 100px;
+    gap: 50px;
+  }
+  .reconocimientos .awardsP,
+  .reconocimientos .awardsP1 {
     font-size: 15px;
   }
-  .indice {
+  /*TRAYECTORIA*/
+  .trayectoria .indice {
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -480,8 +430,20 @@ label {
     margin-left: 20px;
     margin-right: 20px;
   }
-  .indice a {
+  .trayectoria .indice a {
     font-size: 20px;
+  }
+  .trayectoria .barcaH2,
+  .trayectoria .parisH2,
+  .trayectoria .argH2 {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+    gap: 50px;
+  }
+  .trayectoria .trayectP {
+    font-size: 15px;
   }
   .trayect h1 {
     font-size: 50px;
@@ -491,38 +453,38 @@ label {
     padding: 40px;
     font-size: 50px;
   }
-  .contact input,
-  textarea {
+  .contact-content p {
     font-size: 15px;
   }
-  .contact-content p {
+  .contact input,
+  textarea {
     font-size: 15px;
   }
   /*GALERIA*/
   .cards {
     flex-direction: column;
   }
-  .card-text {
+  .cards .card-text {
     color: transparent;
   }
-  .card-title {
+  .cards .card-title {
     font-size: 20px;
   }
   .galery-content h1 {
     font-size: 50px;
   }
   /*INDEX*/
-  .index-content h1 {
+  .index .index-content h1 {
     padding: 40px;
     font-size: 50px;
   }
-  .indexcontainer {
+  .index .indexcontainer {
     flex-direction: column;
   }
-  .indexcontainer img {
+  .index .indexcontainer img {
     width: 90%;
   }
-  .indexcontainer p {
+  .index .indexcontainer p {
     font-size: 15px;
     margin: 0;
   }
@@ -541,28 +503,36 @@ label {
   .recon h1 {
     font-size: 30px;
   }
-  .titles-list li {
+  .reconocimientos .recon-index {
+    padding: 40px 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .reconocimientos .recon-index a {
     font-size: 20px;
   }
-  .awardsP,
-  .awardsP1 {
-    font-size: 15px;
+  .reconocimientos .titles-list li {
+    font-size: 20px;
   }
-  .awardsH2 {
+  .reconocimientos .awardsH2 {
     font-size: 30px;
   }
-  .awardsH3 {
+  .reconocimientos .awardsH3 {
     font-size: 25px;
+  }
+  .reconocimientos .awardsP,
+  .reconocimientos .awardsP1 {
+    font-size: 15px;
   }
   /*GALERIA*/
   .cards {
     flex-direction: column;
   }
-  .card-text {
+  .cards .card-text {
     font-size: 8px;
     object-fit: cover;
   }
-  .card-title {
+  .cards .card-title {
     font-size: 10px;
   }
   .galery-content h1 {
@@ -572,6 +542,10 @@ label {
     grid-template-areas: "area1 area1 area1" "area2 area2 area2" "area3 area3 area3" "area4 area4 area4" "area5 area5 area5" "area6 area6 area6" "area7 area7 area7" "area8 area8 area8" "area9 area9 area9" "area10 area10 area10";
   }
   /*CONTACTO*/
+  .contact-content h1 {
+    padding: 30px;
+    font-size: 40px;
+  }
   .contact-content p {
     font-size: 13px;
   }
@@ -579,30 +553,25 @@ label {
   textarea {
     font-size: 10px;
   }
-  .contact-content h1 {
-    padding: 30px;
-    font-size: 40px;
-  }
   /*TRAYECTORIA*/
+  .trayectoria .indice a {
+    font-size: 15px;
+  }
   .trayect h1 {
     font-size: 40px;
   }
-  .indice a {
-    font-size: 15px;
-  }
   /*INDEX*/
-  .index-content h1 {
+  .index .index-content h1 {
     padding: 30px;
-    color: white;
     font-size: 40px;
   }
-  .indexcontainer {
+  .index .indexcontainer {
     flex-direction: column;
   }
-  .indexcontainer img {
+  .index .indexcontainer img {
     width: 90%;
   }
-  .indexcontainer p {
+  .index .indexcontainer p {
     font-size: 13px;
     margin: 0;
   }
@@ -612,42 +581,6 @@ label {
     width: auto;
   }
 }
-@media (max-width: 250px) {
-  /*GALERIA*/
-  .cards {
-    flex-direction: column;
-  }
-  .card-text {
-    font-size: 8px;
-    object-fit: cover;
-    color: transparent;
-  }
-  .card-title {
-    font-size: 10px;
-  }
-  .galery-content h1 {
-    font-size: 25px;
-  }
-  /*CONTACTO*/
-  .contact-content h1 {
-    font-size: 25px;
-  }
-  /*TRAYECTORIA*/
-  .trayect h1 {
-    font-size: 25px;
-  }
-  .trayectP {
-    font-size: 12px;
-  }
-  /*INDEX*/
-  .index-content h1 {
-    font-size: 25px;
-  }
-  /*GENERALES*/
-  footer img {
-    height: 20px;
-    width: auto;
-  }
-}
+/*BASE*/
 
 /*# sourceMappingURL=styles.css.map */

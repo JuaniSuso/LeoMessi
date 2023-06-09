@@ -1,51 +1,44 @@
-/* RESET */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    background-color: #272727;
-  }
-
-  main {
-    padding-top: 80px;
-  }
+@use "vars.scss";
   
   /* NAV BAR*/
   
   footer {
     background-color: white;
     padding: 40px;
+    img {
+      @include sizes(auto,70px)
+    }
   }
   
   .logos-container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    & :hover {
+      background-color: rgb(224, 223, 223);
+    
+      transition: 0.4s;
+    }
   }
   
-  .logos-container :hover {
-    background-color: rgb(224, 223, 223);
+ 
   
-    transition: 0.4s;
-  }
   
-  footer img {
-    height: 70px;
-    width: auto;
-  }
   
   .navbar-brand {
-    height: 70px;
-    width: 70px;
+    @include sizes(70px,70px);
+    .navba-toggler {
+      list-style: none;
+      border: 3px solid transparent;
+      padding: 10px;
+      transition: 0.4s;
+       
+    }
   }
   
   .nav-item:hover,
   .navbar-toggler:hover {
-    background-color: #3987fc;
+    background-color: vars.$main-color;
     border-bottom: 2px solid #ffff;
     border-top: 2px solid #ffff;
   }
@@ -65,8 +58,9 @@
     background-color: #272727;
     padding-top: 80px;
     padding-bottom: 80px;
+    .carousel-item {
+      border: 2px solid vars.$main-color;
+    }
   }
 
-  .carousel-item {
-    border: 2px solid #3987fc;
-  }
+  

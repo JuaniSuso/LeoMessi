@@ -1,0 +1,19 @@
+
+/*MIXIN*/
+
+@mixin imgs($margin,$width,$radius,$shadow,$border){
+    margin-right: $margin;
+    width: $width;
+    border-radius: $radius;
+    box-shadow: $shadow;
+    border: $border;
+}
+
+
+@mixin sizes($width,$height){
+    width: $width;
+    height: $height;
+}
+
+
+/*NESTING*/

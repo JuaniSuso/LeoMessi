@@ -22,6 +22,8 @@
     justify-content: center;
     padding: 70px;
     color: $text-color;
+    border: 3px solid white;
+    border-radius: 20px;
     margin-left: 50px;
     margin-right: 50px;
     & a {
@@ -30,20 +32,42 @@
       font-size: 24px;
       text-decoration: none;
     }
+    &:hover {
+      transform: scale(1.02, 1.03);
+      transition: 0.3s;
+    }
   }
   .barcaH2 {
     color: $text-color;
-    background-color: #333333;
+    background: linear-gradient(to right, $bg-color, #333333, $bg-color);
     font-size: 60px;
     display: flex;
     justify-content: center;
     padding: 100px;
     gap: 50px;
+    animation-name: animacionBA;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-delay: 0;
   }
 
-  .parisH2,
+  .parisH2 {
+    @extend .barcaH2;
+    animation-name: animacionPSG;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-delay: 0;
+  }
+
   .argH2 {
     @extend .barcaH2;
+    animation-name: animacionARG;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-delay: 0;
   }
 
   .trayectP {
@@ -54,3 +78,84 @@
     text-align: justify;
   }
 }
+
+@keyframes animacionBA {
+  0% {
+    color: #0156aa;
+  }
+
+  50% {
+    color: #bb024c;
+  }
+
+  70% {
+    color: #bb024c;
+  }
+
+  100% {
+    color: #0156aa;
+  }
+}
+
+@keyframes animacionPSG {
+  0% {
+    color: #004170;
+  }
+
+  40% {
+    color: #004170;
+  }
+
+  50% {
+    color: #ffffff;
+  }
+
+  60% {
+    color: #ffffff;
+  }
+
+
+  70% {
+    color: #da291c;
+  }
+
+  90% {
+    color: #da291c;
+  }
+
+  100%{
+    color: #da291c;
+  }
+}
+
+@keyframes animacionARG {
+  0% {
+    color: #75aadb;
+  }
+
+  40% {
+    color: #75aadb;
+  }
+
+  50% {
+    color: #fcbf45;
+  }
+
+  60% {
+    color: #fcbf45;
+  }
+
+  70% {
+    color: #ffffff;
+  }
+
+  90% {
+    color: #ffffff;
+  }
+
+  100% {
+    color: #75aadb;
+  }
+}
+
+

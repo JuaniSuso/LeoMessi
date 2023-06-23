@@ -18,7 +18,7 @@
   background-color: $bg-color;
   grid-template-columns: repeat(3, 2fr);
   grid-template-rows: repeat(auto, 500px);
-  padding: 30px;
+  padding: 50px;
   grid-template-areas:
     "area5 area5 area2"
     "area5 area5 area2"
@@ -49,6 +49,7 @@
   }
   .c1 {
     grid-area: area4;
+    
   }
 
   .c2 {
@@ -91,6 +92,7 @@
     box-shadow: 10px 10px 7px 4px #181818;
     border: 3px solid $main-color;
     transition: 0.2s;
+    transform: scale(1.02 , 1.02);
   }
 }
 

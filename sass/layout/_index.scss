@@ -20,6 +20,10 @@
     border-bottom: 3px solid $main-color;
     text-align: justify;
     img {
+      &:hover{
+        transform: scale(1.02 , 1.02);
+        transition: 0.3s;
+      }
       @include imgs(
         20px,
         50%,
